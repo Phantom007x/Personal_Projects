@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Pirata+One&display=swap">
+    <style>
+        .circle-img {
+          width: 120px;           /* You can adjust the size */
+          height: 120px;
+          border-radius: 50%;     /* This makes it circular */
+          object-fit: cover;      /* Ensures the image covers the circle */
+          border: 3px solid #333; /* Optional border */
+        }
+
+        .background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('background.jpg'); /* replace with your background image */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      filter: brightness(50%); /* fade the image */
+      z-index: -1;
+    }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Adjust 0.5 for more or less dullness */
+            z-index: -1;
+    }
+
+        .main-title{
+            font-family: 'Cinzel', serif;
+            font-size: 25px;
+            color: crimson;
+            text-shadow: 2px 2px 10px black;
+        }
+
+        .bio{
+            font-family: 'Cinzel', serif;
+            font-size: 15px;
+            color: rgb(255, 0, 51);
+            text-shadow: 2px 2px 10px black;
+        }
+
+        .bio-text{
+            font-family: 'Cinzel', serif;
+            font-size: 12px;
+            color: rgb(202, 201, 202);
+            text-shadow: 2px 2px 10px black;
+        }
+
+        .fav-food{
+            font-family: 'Cinzel', serif;
+            font-size: 15px;
+            color: crimson;
+            text-shadow: 2px 2px 10px black;
+        }
+
+        .food-text{
+            font-family: 'Cinzel', serif;
+            font-size: 12px;
+            color: rgb(202, 201, 202);
+            text-shadow: 2px 2px 10px black;
+        }
+
+        .weapons{
+            font-family: 'Cinzel', serif;
+            font-size: 15px;
+            color: crimson;
+            text-shadow: 2px 2px 10px black;
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <img src="pfp.jpg" alt="pfp" class="circle-img">
+    <div class="main-title">Dante</div>
+    <br>
+    <div class="bio">Bio:<span class="bio-text">  Half-demon, half-human, full badass. Legendary Devil Hunter and owner of Devil May Cry, he laughs in the face of danger, slices through demons with flair, and cracks a one-liner before the smoke clears. Fueled by rebellion, pizza, and a taste for justice, he’s the guy Hell warns its minions about.</span></div><p></p>
+    <br>
+    <div class="fav-food">Favourite Food: <span class="food-text">Pizza</span></div>
+    <br>
+    <div class="weapons">Weapons of choice:</div>
+    
+</body>
+</html>
